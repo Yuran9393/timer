@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded',function(){
             if(timerHours.textContent < 0  || timerMinutes.textContent < 0 || timerSeconds.textContent < 0) {
                 timerHours.textContent = "00";
                 timerMinutes.textContent = "00";
-                timerSeconds.textContent = "00";
+                timerSeconds.textContent = "0";
             }
             if(timerSeconds.textContent < 10){
                 timerSeconds.textContent = '0' +timerSeconds.textContent;
@@ -36,5 +36,5 @@ window.addEventListener('DOMContentLoaded',function(){
         }
         updataClock();
     }
-    setInterval(countTimer, 1000 ,'09 July 2021 ');
+    setInterval(countTimer, 1000 ,'10 July 2021 ');
 });
